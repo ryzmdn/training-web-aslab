@@ -2,7 +2,6 @@ class Router {
   constructor() {
     this.routes = {
       login: "login-page",
-      register: "register-page",
       dashboard: "dashboard-page",
       edit: "edit-page",
     };

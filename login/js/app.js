@@ -32,63 +32,6 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
   }
 });
 
-document
-  .getElementById("register-form")
-  .addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById("register-name").value;
-    const email = document.getElementById("register-email").value;
-    const password = document.getElementById("register-password").value;
-    const confirmPassword = document.getElementById(
-      "register-confirm-password"
-    ).value;
-
-    document
-      .querySelectorAll("#register-page .error")
-      .forEach((el) => (el.textContent = ""));
-
-    const nameError = Validator.validateName(name);
-    const emailError = Validator.validateEmail(email);
-    const passwordError = Validator.validatePassword(password);
-    const confirmPasswordError = Validator.validateConfirmPassword(
-      password,
-      confirmPassword
-    );
-
-    if (nameError) {
-      document.getElementById("register-name-error").textContent = nameError;
-      return;
-    }
-
-    if (emailError) {
-      document.getElementById("register-email-error").textContent = emailError;
-      return;
-    }
-
-    if (passwordError) {
-      document.getElementById("register-password-error").textContent =
-        passwordError;
-      return;
-    }
-
-    if (confirmPasswordError) {
-      document.getElementById("register-confirm-password-error").textContent =
-        confirmPasswordError;
-      return;
-    }
-
-    try {
-      userManager.register({ name, email, password });
-      alert("Registrasi berhasil! Silakan login dengan akun Anda.");
-      router.navigate("login");
-
-      document.getElementById("register-form").reset();
-    } catch (error) {
-      alert("Registrasi gagal: " + error.message);
-    }
-  });
-
 document.getElementById("edit-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
