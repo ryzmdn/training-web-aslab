@@ -1,0 +1,11 @@
+@import url('./css/reset.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/tentang.css');
+@import url('./css/skills.css');
+@import url('./css/project.css');
+@import url('./css/blog.css');
+@import url('./css/kontak.css');
+@import url('./css/footer.css');
+@import url('./css/breakpoints/mobile.css');
+@import url('./css/breakpoints/tablet.css');

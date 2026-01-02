@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 24px;
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .dot-icon {
+    display: none;
+  }
+  
+  p:first-child {
+    order: 2;
+  }
+}
