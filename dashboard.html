@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dashboard/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside id="sidebar">
+      <div role="dialog-backdrop"></div>
+
+      <div class="dialog__panel-wrapper">
+        <div class="dialog__panel-header">
+          <div
+            class="dialog__panel-header-inset group-data-closed/dialog-panel:opacity-0"
+          >
+            <button
+              type="button"
+              command="close"
+              commandfor="sidebar"
+              class="dialog__close-button"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M6 18 18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          <div class="dialog__panel-sidebar-content">
+            <div class="dialog__panel-logo">
+              <img
+                src="./assets/logo.png"
+                alt="logo"
+              />
+            </div>
+            <nav class="dialog__panel-navigation">
+              <ul class="dialog__panel-navigation-list">
+                <li>
+                  <a href="#" class="dialog__panel-link">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Dashboard
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="desktop__sidebar">
+      <div class="desktop__sidebar-content">
+        <div class="desktop__sidebar-logo">
+          <img
+            src="./assets/logo.png"
+            alt="logo"
+          />
+        </div>
+        <nav class="desktop__sidebar-nav">
+          <ul class="desktop__sidebar-nav-list">
+            <li>
+              <ul class="desktop__sidebar-nav-items-top">
+                <li>
+                  <a href="#" class="desktop__sidebar-nav-item">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      class="desktop__sidebar-nav-item-icon"
+                    >
+                      <path
+                        d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Dashboard
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="desktop__sidebar-nav-profile">
+              <a href="#" class="desktop__sidebar-nav-profile-link">
+                <img
+                  src="./assets/saya.avif"
+                  alt=""
+                  class="desktop__sidebar-nav-profile-avatar"
+                />
+                <span aria-hidden="true">John Doe</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header>
+      <button
+        type="button"
+        command="show-modal"
+        commandfor="sidebar"
+        class="header__menu-button"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <path
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="header__title">Dashboard</div>
+      <a href="#">
+        <img
+          src="./assets/saya.avif"
+          alt="icon"
+          class="header__avatar"
+        />
+      </a>
+    </header>
+
+    <main>
+      <div class="main__content">
+        <!-- buat isi -->
+        <h1>Dashboard</h1>
+      </div>
+    </main>
+
+    <script src="./dashboard/js/index.js"></script>
+  </body>
+</html>
